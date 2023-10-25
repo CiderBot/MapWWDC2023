@@ -49,6 +49,8 @@ struct ContentView: View {
     // routing info
     @State private var route: MKRoute?
     
+    @State private var lookAroundScene: MKLookAroundScene?
+    
     var body: some View {
         Map(position: $position, selection: $selectedResult) {
             // marker example
@@ -83,12 +85,13 @@ struct ContentView: View {
             HStack {
                 Spacer()
                 VStack(spacing: 0) {
-                    /*if let selectedResult {
-                        ItemInfoView(selectedResult: selectedResult)
+                    if let selectedResult {
+                        ItemInfoView(selectedResult: selectedResult, route: route)
                             .frame(height: 128)
                             .clipShape(RoundedRectangle(cornerRadius: 10))
-                            .padding(.top, .horizontal)
-                    }*/
+                            .padding(.top)
+                            .padding(.horizontal)
+                    }
                     BeanTownButtons(
                         position: $position,
                         searchResults: $searchResults,
@@ -103,7 +106,7 @@ struct ContentView: View {
         .onChange(of: searchResults) {
             position = .automatic
         }
-        .onChange(of: searchResults) {
+        .onChange(of: selectedResult) {
             getDirections()
         }
         .onMapCameraChange { context in

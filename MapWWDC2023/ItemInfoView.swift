@@ -9,28 +9,27 @@ import SwiftUI
 import MapKit
 
 struct ItemInfoView: View {
-    var selectedResult: MKMapItem
-    //var route: MKRoute?
+    var selectedResult: MKMapItem!
+    var route: MKRoute?
     
     @State private var lookAroundScene: MKLookAroundScene?
     
-    /*private var travelTime: String? {
+    private var travelTime: String? {
         guard let route else { return nil}
         let formatter = DateComponentsFormatter()
         formatter.unitsStyle = .abbreviated
         formatter.allowedUnits = [.hour, .minute]
         return formatter.string(from: route.expectedTravelTime)
-    }*/
+    }
     
     var body: some View {
         LookAroundPreview(initialScene: lookAroundScene)
             .overlay(alignment: .bottomTrailing) {
                 HStack {
                     Text("\(selectedResult.name ?? "")")
-                    /*if let travelTime {
+                    if let travelTime {
                         Text(travelTime)
-                    }*/
-                    
+                    }
                 }
                 .font(.caption)
                 .foregroundStyle(.white)
@@ -55,6 +54,7 @@ struct ItemInfoView: View {
 
 
 #Preview {
-    ItemInfoView(selectedResult: MKMapItem(placemark: .init(coordinate: .parking)))
+    
+    ItemInfoView(selectedResult: MKMapItem(placemark: .init(coordinate: .appleHQ)))
 }
 

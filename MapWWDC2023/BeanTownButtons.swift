@@ -64,6 +64,8 @@ struct BeanTownButtons: View {
 
 /*
 #Preview {
-    BeanTownButtons()
+    @State var testPosition: MapCameraPosition = .automatic
+    @State var testResults: [MKMapItem] = []
+    BeanTownButtons(position: $testPosition, searchResults: $testResults)
 }
 */
