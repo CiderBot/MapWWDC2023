@@ -78,6 +78,8 @@ struct ContentView: View {
                 MapPolyline(route)
                     .stroke(.blue, lineWidth: 5)
             }
+            
+            UserAnnotation()
         }
         .mapStyle(.standard(elevation: .realistic))
         // other options
@@ -116,6 +118,12 @@ struct ContentView: View {
         }
         .onMapCameraChange { context in
             visibleRegion = context.region
+        }
+        .mapControls {
+            MapUserLocationButton()
+            // user location may not work because of location permissons
+            MapCompass()
+            MapScaleView()
         }
     }
     
