@@ -11,6 +11,8 @@
 		AACD494A2AE5C79C002934B9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACD49492AE5C79C002934B9 /* ContentView.swift */; };
 		AACD494C2AE5C79F002934B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AACD494B2AE5C79F002934B9 /* Assets.xcassets */; };
 		AACD494F2AE5C79F002934B9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AACD494E2AE5C79F002934B9 /* Preview Assets.xcassets */; };
+		AACD49572AE5E477002934B9 /* BeanTownButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACD49562AE5E477002934B9 /* BeanTownButtons.swift */; };
+		AACD49592AE77FD9002934B9 /* ItemInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACD49582AE77FD9002934B9 /* ItemInfoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,9 @@
 		AACD49492AE5C79C002934B9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AACD494B2AE5C79F002934B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AACD494E2AE5C79F002934B9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AACD49552AE5C7BB002934B9 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		AACD49562AE5E477002934B9 /* BeanTownButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeanTownButtons.swift; sourceTree = "<group>"; };
+		AACD49582AE77FD9002934B9 /* ItemInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemInfoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +40,7 @@
 		AACD493B2AE5C79C002934B9 = {
 			isa = PBXGroup;
 			children = (
+				AACD49552AE5C7BB002934B9 /* README.md */,
 				AACD49462AE5C79C002934B9 /* MapWWDC2023 */,
 				AACD49452AE5C79C002934B9 /* Products */,
 			);
@@ -53,6 +59,8 @@
 			children = (
 				AACD49472AE5C79C002934B9 /* MapWWDC2023App.swift */,
 				AACD49492AE5C79C002934B9 /* ContentView.swift */,
+				AACD49562AE5E477002934B9 /* BeanTownButtons.swift */,
+				AACD49582AE77FD9002934B9 /* ItemInfoView.swift */,
 				AACD494B2AE5C79F002934B9 /* Assets.xcassets */,
 				AACD494D2AE5C79F002934B9 /* Preview Content */,
 			);
@@ -137,8 +145,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AACD49572AE5E477002934B9 /* BeanTownButtons.swift in Sources */,
 				AACD494A2AE5C79C002934B9 /* ContentView.swift in Sources */,
 				AACD49482AE5C79C002934B9 /* MapWWDC2023App.swift in Sources */,
+				AACD49592AE77FD9002934B9 /* ItemInfoView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +285,7 @@
 				DEVELOPMENT_TEAM = 3SUU8JFXBU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Map Example";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -304,6 +315,7 @@
 				DEVELOPMENT_TEAM = 3SUU8JFXBU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Map Example";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
